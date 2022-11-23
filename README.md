@@ -5,4 +5,5 @@
 ### Pass props as a function so you know what to render
 
 Makes obvious how components that share the same state, use it
+
 Makes state behavior resusuable
