@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Toggle>
-        {(greeting, toggle, on) => <div>{on && greeting}<button onClick={toggle}>{on ? 'OFF' : 'ON'}</button></div>}
+        {(greeting, toggle, on) => <div>{on && greeting}<button data-testid='toggle' onClick={toggle}>{on ? 'OFF' : 'ON'}</button></div>}
       </Toggle>
       <Counter header={(num: number) => num}>
         {(number) => number}
