@@ -5,7 +5,7 @@ function Counter({header, children} : {header?: (num: number) => ReactNode, chil
     return (
       <>
         {header && <h2>{header?.(state)}</h2>}
-        <button onClick={() => 
+        <button data-testid='counter' onClick={() => 
           stateSet((number) => {
             return number + 1
           }
